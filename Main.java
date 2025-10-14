@@ -59,6 +59,35 @@ public class Main {
       int randInt = (int) (Math.random() * 20) + 10;
       System.out.println(randInt);
 
+      // Strings are OBJECTS from the String CLASS
+      // containing a SEQUENCE OF CHARACTERS
+      // indexed starting from 0
+
+      // Create String objects in 2 ways
+      // 1. Call the String() CONSTRUCTOR
+      String str1 = new String("Comp Sci");
+      // 2. They made a SHORTCUT to set up Strings
+      String str2 = "AP Java";
+
+      // Call String METHODS on a specific Strong OBJECT
+      int str1Len = str1.length();
+      int str2Len = str2.length();
+      System.out.println("Length 1: " + str1Len); // CONCATENATE Strings
+      System.out.println("Length 2: " + str2Len);
+      // .length() returns the NUMBER OF CHARACTERS
+      // spaces are included!
+
+      // .substring() is an OVERLOADED method (2 versions)
+      // that returns PART of a larger String
+      String message = "APCS is awesome!";
+
+      String firstWord = message.substring(0, 4);
+      System.out.println(firstWord);
+      // .substring(int from, int to) DOES NOT INCLUDE
+      // the character at index to
+
+      String lastWord = message.substring(8);
+      System.out.println(lastWord);
 
    }
 
